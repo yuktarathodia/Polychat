@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PolyChat Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span>PolyChat</span>
+        </div>
+        <button class="new-chat-btn" id="newChatBtn">+ New Chat</button>
+        <div class="chat-history">
+            <div class="chat-item">No chats</div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2 id="chatTitle">Chat</h2>
+            <select id="modelDropdown">
+                <option value="gpt-4o">GPT-4o</option>
+                <option value="gemini-2.5">Gemini 2.5</option>
+                <option value="cohere">Cohere</option>
+            </select>
+        </div>
+
+        <div id="messagesContainer"></div>
+
+        <div class="input-container">
+            <div class="input-box">
+                <input type="text" id="chatInput" placeholder="Type message...">
+                <button id="sendBtnChat">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
